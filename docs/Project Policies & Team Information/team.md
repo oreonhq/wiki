@@ -3,6 +3,7 @@ Oreon team includes several positions. Temporary contributors will not show up h
 
 ### Leaders
 - Project Lead: Brandon Lester (Jan 2024-PRESENT) - @brandonlester:matrix.org on Matrix or @2elevation on Discord
+- Specialized Devices Lead: sk1lld (Sep 2026-PRESENT) - @sk1lld:sk1lld.xyz on Matrix or @sk1lld_ on Discord
 - Community Lead: None. Our previous community leader left in February 2026 and we have not yet found a new one.
 - Team Lead: None. Our previous team leader left in February 2026 and we have not yet found a new one.
 
