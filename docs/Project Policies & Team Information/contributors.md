@@ -9,9 +9,10 @@ Contributors must only submit work that they have the legal right to contribute.
 By submitting code or other contributions to Oreon repositories, you confirm that:
 
 - the work is your original contribution, or  
-- you have permission to submit the work under the project license  
+- you have permission to submit the work under the project license
+- you are giving us permission to hold the code, and that you cannot claim to "own" any parts of the code whatsoever 
 
-Contributions that violate copyright or licensing requirements cannot be accepted.
+Contributions that violate this policy cannot be accepted.
 
 ## Licensing
 All Oreon repositories must include a license file.
@@ -35,11 +36,7 @@ Contributors may use personal repositories during development. However, code int
 Once code is merged into an Oreon repository, it becomes part of the project and is governed by the project license.
 
 ## Commit messages
-All commits must follow the [Conventional Commits](https://www.conventionalcommits.org) specification.
-
-Commit titles must be under 40 characters.
-
-Each commit must include a body that describes what the change does.
+All commits must include at least **some** detail. We do not like commits that are vague and don't explain what has changed.
 
 ## Pull requests
 Pull requests should clearly explain the purpose of the change.
@@ -55,7 +52,7 @@ Maintainers may request changes before accepting a contribution.
 Not every contribution will be accepted.
 
 ## Maintainer responsibilities
-Maintainers are responsible for protecting the stability and direction of the project.
+Maintainers are responsible for protecting the stability and direction of a given sub-project.
 
 Maintainers may:
 
