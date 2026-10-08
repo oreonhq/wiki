@@ -1,26 +1,11 @@
 # Oreon Team Policies
 
-## Contributions and maintaining
+## Discussion platforms
+We use both Matrix and Discord for team discussion. You may use DMs on either platform to discuss directly with team members, though we recommend that you use group chats or team chats if you are working with a group.
 
-All commits must be signed with a PGP key. See [oreonhq/how-pgp](https://github.com/oreonhq/how-pgp) for a guide on setting up PGP signing.
+## Acceptance of policies
+By joining the Oreon team, you agree to every other policy in this series, including but not limited to:
+- Contribution Policies
+- Community Guidelines
 
-All changes must be submitted through a pull request. Direct pushes to protected branches are not permitted.
-
-All changes must be approved by the repository maintainer before merging.
-
-If a commit from an external contributor is not PGP-signed, the approving maintainer must re-sign it before merging:
-
-```
-git commit --amend -S --no-edit
-```
-
-## Repository creation
-
-New repositories must follow the standard setup process:
-
-1. Create a new repository from the [oreonhq/default-repo](https://github.com/oreonhq/default-repo) template.
-2. Clone the repository locally and remove the `.git` directory.
-3. Import the JSON ruleset: go to **Settings → Rules → Rulesets → New Ruleset → Import from JSON** and select `rules.json`.
-4. Delete `rules.json` after the ruleset has been imported.
-5. Create a team named after the repository.
-6. Edit `.github/CODEOWNERS` and set the default owner: `* @oreonhq/<repo_name>`
+Failure to comply will result in a removal from the team.

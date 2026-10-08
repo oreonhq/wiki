@@ -8,10 +8,10 @@ Oreon team includes several positions. Temporary contributors will not show up h
 - Team Lead: None. Our previous team leader left in February 2026 and we have not yet found a new one.
 
 ### Management
-- Recruitment Coordinators
+- General Operations Coordinators
   - None at this time
 
-- General Operations Coordinators
+- Recruitment Coordinators
   - None at this time
   
 # Teams 
@@ -30,6 +30,9 @@ Responsible for finding security issues, monitoring CVEs, advising the users of 
 
 ### Social Media Team
 Responsible for taking part in production, editing, and interaction with community social media accounts, such as our YouTube channels.
+
+### Other Teams
+Other teams are not listed here and have their own goals.
 
 # Role of BoostyConnect Technologies
 BoostyConnect Technologies is the legal holder of Oreon and provides infrastructure support & team supervision for parts of Oreon.
