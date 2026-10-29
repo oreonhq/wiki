@@ -27,4 +27,5 @@ Understand the support lifecycle of Oreon 10 and plan your deployments according
 | Build 2607 | Jul 13, 2026 | Aug 7, 2026 |
 | Build 2608 | Aug 7, 2026 | Aug 25, 2026 |
 | Build 2609 | Aug 25, 2026 | Oct 5, 2026 |
-| Build 2610 | Oct 5, 2026 | Supported |
+| Build 2610 | Oct 5, 2026 | Oct 26, 2026 |
+| Build 2611 | Oct 26, 2026 | Supported |
