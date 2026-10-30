@@ -15,7 +15,7 @@ Read the whole guide once before you start.
 ## 2. What your PC needs
 
 - Windows 10 version 2004 (build 19041) or newer, or Windows 11, 64-bit
-- A processor that Oreon 10 supports. The app checks this for you.
+- A processor that supports x86-64-v3 (most Intel from 2013 and AMD from 2015 on). The app checks this for you.
 - UEFI startup mode and a GPT disk. Legacy BIOS and MBR disks are refused.
 - Disk storage mode set to AHCI, not RAID
 - Enough free space on C: for Oreon plus the files you bring
@@ -23,7 +23,7 @@ Read the whole guide once before you start.
 
 ## 3. Install the app
 
-1. Copy `CentrioTransfer-1.0.0.msi` to the PC.
+1. Download the transfer tool.
 2. Double-click it and follow the installer.
 3. Open Centrio Transfer from the Start menu. If Windows asks, choose Yes to run it as administrator.
 
@@ -98,32 +98,31 @@ Click Restart now. You can still undo everything until Oreon starts.
 ## 5. What happens after restart
 
 NOTE: things may take a while, do not panic and reboot or mess with things!!!
-ANOTHER NOTE: sometimes notifications will pop up with the progress, sometimes it may look stuck, but actually has completed, the solution is to clear the notification via the X.
 
 1. The PC starts Oreon 10. If Windows starts again, open the boot menu with F12, F9 or Esc and choose Oreon 10.
 2. Oreon finishes setting itself up.
 3. GNOME first-time setup opens. Create your account.
-4. As soon as you reach the desktop, a notice says "Setup is still finishing". It shows how far the copy of your files from Windows has got, for example "Copying your files from Windows. 40%". Leave the PC on and plugged in. If the PC restarts or loses power during this step, the copy starts again on its own after you log in.
-5. When the copy is checked, the notice changes to "Restarting to remove Windows" with a countdown from 2 minutes. Save your work. Click Restart now if you do not want to wait. If you restart the PC yourself, removing Windows still goes ahead on the next start.
-6. Before the login screen you see a text screen like this:
+4. When the account is made, the PC restarts on its own. You do not have to use the desktop yet.
+5. Everything else happens on the start-up screen, before the login screen. A spinner shows with a line of text under it, for example:
 
-   `Finishing setup. Please do not turn off your PC. Removing Windows. 40%`
+   `Copying your files from Windows. 40%`
 
-   and then
+   `Removing Windows. 60%`
 
-   `Finishing setup. Please do not turn off your PC. Moving your files. 45%`
+   `Moving your files. 45%`
 
-   This can take a long time if you brought a lot of files. The number goes up as it works. Do not turn off the PC or hold the power button. The screen is not frozen.
-7. The login screen appears. A notice says "Windows removed". The old Windows space is now your /home partition.
-8. If you picked apps to bring, they are installed from Flathub now. The notice shows "Installing apps" with a percent. You can use the PC while this runs. When it is done you get "Apps installed", or a list of the apps that could not be installed. You can get those later from Software.
+   `Installing apps. 2 of 5: org.mozilla.firefox`
 
-In rare cases you get "Restart to finish removing Windows". Restart once more and Oreon finishes setting up /home.
+   This can take a long time if you brought a lot of files. The text changes as it goes. Do not turn off the PC or hold the power button. The screen is not frozen!!!! The PC may restart once more with "Restarting to finish removing Windows". That is normal.
+6. When it is done the text says "Setup is done" for a few seconds and the login screen appears. The old Windows space is now your /home partition. Log in and use the PC as normal.
 
-If the power goes out during step 6, turn the PC back on. It carries on from where it stopped.
+If there is no network, the start-up screen says "Waiting for the network" until the PC is connected. Apps that could not be installed are listed on the start-up screen. You can get those from Software.
+
+If the power goes out during any of these steps, turn the PC back on. It carries on from where it stopped.
 
 ## 6. If Windows is kept
 
-Windows is only deleted after your files are copied and checked. If something fails, you get a "Windows was kept" notice and Windows stays on the disk. Details are in `/var/lib/centrio-transfer/log`.
+Windows is only deleted after your files are copied and checked. If something fails, the start-up screen says "Windows was kept" and Windows stays on the disk. Details are in `/var/lib/centrio-transfer/log`.
 
 ## 7. Undo
 
