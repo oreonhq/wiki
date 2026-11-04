@@ -85,8 +85,6 @@ This is the full plan: how much C: shrinks, the new /boot and root partitions, a
 
 ### Installing
 
-![Installing](images/08-prepare.png)
-
 The app downloads and checks Oreon, shrinks C:, creates the Oreon partitions, writes Oreon, and adds Oreon to startup. Keep the PC on and plugged in. Everything up to here can be undone.
 
 ### Ready to install
