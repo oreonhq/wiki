@@ -38,6 +38,8 @@ Once code is merged into an Oreon repository, it becomes part of the project and
 ## Commit messages
 All commits must include at least **some** detail. We do not like commits that are vague and don't explain what has changed.
 
+Packaging commits are one spec package each, with a subject like `sed: update to 4.10`. [Commits](../packaging/packaging-commits.md) has the rest, and `orbscli commit-check` is what catches a commit that touched two specs.
+
 ## Pull requests
 Pull requests should clearly explain the purpose of the change.
 
