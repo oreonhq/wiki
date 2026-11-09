@@ -1,23 +1,37 @@
 ---
 sidebar_position: 1
+title: Welcome to the Oreon Wiki
+hide_title: true
 ---
 
-# Welcome to the Oreon Wiki
+![Welcome to the Oreon Wiki](/img/welcome.png)
 
 Welcome to the **Oreon Community Wiki** - a collaborative documentation project for the Oreon ecosystem! This wiki is built and maintained by the community to provide comprehensive guides, tutorials, and reference materials for users and developers working with Oreon.
 
-## Wiki Under Construction
+## Wiki under construction
 
-**Please note:** This wiki is brand new and actively under development. Many sections are still being created, and existing content may be incomplete. We appreciate your patience as we work to build a comprehensive knowledge base.
+**Please note:** This wiki is still under construction. A lot of topics are missing or are still basic.
 
-## Official Documentation
+### Basic users
 
-Oreon Wiki is now considered the official documentation hub for Oreon. As time goes on, the following guides will be written:
+- [Getting Started](/docs/category/getting-started) for installing Oreon and moving an existing system over
+- [User Handbook](/docs/category/user-handbook) for everyday desktop use
+- [Support Timelines](/docs/category/support-timelines) for how long each release stays supported
 
-- Complete installation guides
-- API reference
-- Getting started tutorials
-- Architecture documentation
+The user handbook is also written in other languages.
+
+- [Hindi](/docs/category/user-handbook-hindi)
+- [Portuguese (Brazil)](/docs/category/user-handbook-pt-br)
+- [Spanish](/docs/category/user-handbook-spanish)
+
+### Team members
+
+- [Project Policies and Team Information](/docs/category/policies)
+- [Packaging](/docs/category/packaging)
+
+## Official documentation
+
+Oreon Wiki is now considered the official documentation hub for Oreon. As time goes on, we and our community will write more guides and  documentation.
 
 ## How to Contribute
 
@@ -41,15 +55,9 @@ This wiki thrives on community contributions! Here's how you can help:
 - **Community tools and plugins** documentation
 - **Translation** of content to other languages
 
-## What You'll Find Here
+## What you'll find here
 
-As this wiki grows, you can expect to find:
-
-- **Community Guides** - Step-by-step tutorials created by users
-- **Best Practices** - Recommended approaches and patterns
-- **Troubleshooting** - Solutions to common problems
-- **Community Tools** - Third-party tools and plugins
-- **Examples** - Real-world use cases and implementations
+The sidebar is grouped into sections. Start with the ones linked above if you are a basic user or on the team.
 
 ## Quick Links
 
