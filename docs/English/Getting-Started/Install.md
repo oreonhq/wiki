@@ -62,12 +62,6 @@ FOR ADVANCED USERS:
 You do not need to turn off Secure Boot. Both the installer and the installed system are signed with Secure Boot keys. Additionally, dual booting requires UEFI, but BIOS systems are still supported on single boot systems.
 :::
 
-## How the installer is laid out
-
-After the Welcome screen you land on the Installation Summary. It lists each setting as a row. Click a row to open its screen, choose your options, then press that screen's Apply button to come back to the summary. Rows marked Required must be done before you can start. Rows marked Configured are done.
-
-At the bottom of the window are Back and Next buttons. On a settings screen the Back button says Cancel and takes you back to the summary without saving.
-
 ## Installation process
 
 1. Pick your Installer Language if you wish to use the installer in another language.
