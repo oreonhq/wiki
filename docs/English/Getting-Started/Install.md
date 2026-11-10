@@ -2,9 +2,11 @@
 
 This guide is a step-by-step walkthrough of installing Oreon 10 using a USB drive.
 
-## Before you start
+:::danger
 
-Before you begin, please back up your files to an external drive or cloud service, as installing Oreon may erase all of your files.
+Before you begin, back up your files to an external drive or cloud service, as installing Oreon may erase all of your files.
+
+:::
 
 ## What you need
 
@@ -57,9 +59,10 @@ sudo dd if=Oreon-10-BUILD-ARCH.iso of=/dev/sdX bs=4M status=progress oflag=sync
 4. Select the USB device you put the ISO on previously and press Enter.
 5. This will boot you into a live version of Oreon, where you can now open the installer from either the desktop or the app list and continue the guide.
 
-:::note
-FOR ADVANCED USERS:
+:::note[For advanced users:]
+
 You do not need to turn off Secure Boot. Both the installer and the installed system are signed with Secure Boot keys. Additionally, dual booting requires UEFI, but BIOS systems are still supported on single boot systems.
+
 :::
 
 ## Installation process
@@ -85,34 +88,50 @@ You do not need to turn off Secure Boot. Both the installer and the installed sy
 
 ## Troubleshooting
 
-### No suitable disks found
+<details>
+  <summary>No suitable disks found</summary>
 
-The installer did not find any disk it can use. Check that the drive is connected and shows up in your firmware settings, then click Refresh Disks. Read-only drives, CD drives and the USB stick you booted from are not listed.
+  The installer did not find any disk it can use. Check that the drive is connected and shows up in your firmware settings, then click Refresh Disks. Read-only drives, CD drives and the USB stick you booted from are not listed.
+</details>
 
-### Please select a disk for installation.
+<details>
+  <summary>Please select a disk for installation.</summary>
 
-No disk is selected. This happens when only removable drives are present. Pick a disk under Available Disks.
+  No disk is selected. This happens when only removable drives are present. Pick a disk under Available Disks.
+</details>
 
-### Dual boot requires UEFI firmware.
+<details>
+  <summary>Dual boot requires UEFI firmware.</summary>
 
-Your PC started the installer in legacy BIOS mode. Restart, open the boot menu again and pick the USB entry that starts with UEFI.
+  Your PC started the installer in legacy BIOS mode. Restart, open the boot menu again and pick the USB entry that starts with UEFI.
+</details>
 
-### Select an existing EFI partition for dual boot.
+<details>
+  <summary>Select an existing EFI partition for dual boot.</summary>
 
-Pick the Windows EFI partition under EFI Partition Selection before applying.
+  Pick the Windows EFI partition under EFI Partition Selection before applying.
+</details> 
 
-### Dual boot needs free space (at least 10 GiB) or an unused partition (at least 9 GiB).
+<details>
+  <summary>Dual boot needs free space (at least 10 GiB) or an unused partition (at least 9 GiB).</summary>
 
-There is not enough room. Shrink a Windows partition in Disk Management to leave more unallocated space, then click Refresh Disks. A block in the disk bar may also say it cannot be used, for example because it is too small, mounted, in use or already holds files.
+  There is not enough room. Shrink a Windows partition in Disk Management to leave more unallocated space, then click Refresh Disks. A block in the disk bar may also say it cannot be used, for example because it is too small, mounted, in use or already holds files.
+</details>
 
-### Additional software was selected, but no internet connection is available.
+<details>
+  <summary>Additional software was selected, but no internet connection is available.</summary>
 
-You picked extra software but the PC went offline. Connect to Wi-Fi or Ethernet and try again, or go back to Network Connectivity, choose Continue without network, and install the base system only.
+  You picked extra software but the PC went offline. Connect to Wi-Fi or Ethernet and try again, or go back to Network Connectivity, choose Continue without network, and install the base system only.
+</details>
 
-### Installation failed
+<details>
+  <summary>Installation failed</summary>
 
-If the progress screen shows Installation failed followed by a message, note the message. Restart the live USB and try again. If it keeps failing, share the full message with the Oreon community when asking for help.
+  If the progress screen shows Installation failed followed by a message, note the message. Restart the live USB and try again. If it keeps failing, share the full message with the Oreon community when asking for help.
+</details>
 
-### The PC starts the USB again after install
+<details>
+  <summary>The PC starts the USB again after install</summary>
 
-The USB stick is still plugged in or is first in the boot order. Remove it and restart.
+  The USB stick is still plugged in or is first in the boot order. Remove it and restart.
+</details>
