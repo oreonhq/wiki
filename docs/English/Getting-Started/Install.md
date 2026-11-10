@@ -1,12 +1,20 @@
 # Installing Oreon
 
-This guide walks you through installing Oreon 10 with Centrio Installer. It covers a normal install from a USB stick, step by step.
+This guide is a step-by-step walkthrough of installing Oreon 10 using a USB drive.
 
 ## Before you start
 
-Installing an operating system can erase your files. Back up anything you care about to another drive or a cloud service before you begin.
+Before you begin, please back up your files to an external drive or cloud service, as installing Oreon may erase all of your files.
 
 ## What you need
+
+- A PC/laptop with a modern (Haswell+ for Intel, or Ryzen+ for AMD) processor.
+- A USB stick with at least 2.5 GB of space (4 GB recommended).
+- The Oreon 10 ISO file (Download [here](https://oreonhq.com/en_us/oreon/download))
+- A storage device (SSD or hard drive)
+  - If installing Oreon alongside Windows: You will need at least 10 GiB of unallocated space, or an empty 9 GiB+ partition
+  - If replacing Windows with Oreon: A drive with a total size of at least 10 GiB (recommended 30 GiB+ for installing apps and adding extra files)
+- An internet connection (Optional for basic installation, but required for extra software)
 
 1. A 64-bit PC with a fairly modern processor. Oreon 10 needs a processor that supports x86_64_v3. In plain words, that is most Intel processors from 2013 (Haswell) onward and AMD Ryzen (Zen) processors and newer. Some low-cost Intel chips from those years, such as certain Pentium and Celeron models, may not qualify.
 2. A USB stick big enough to hold the Oreon 10 ISO. Everything on the stick will be erased.
@@ -18,19 +26,19 @@ Installing an operating system can erase your files. Back up anything you care a
 
 Pick one of these tools.
 
-### Fedora Media Writer (Windows, macOS or Linux)
+### Option A. Fedora Media Writer (Windows, macOS or Linux)
 
 1. Install and open Fedora Media Writer.
 2. Choose the option to select an ISO file you already downloaded, then pick the Oreon 10 ISO.
 3. Pick your USB stick and click Write.
 
-### Rufus (Windows)
+### Option B. Rufus (Windows)
 
 1. Open Rufus and pick your USB stick under Device.
 2. Click Select and choose the Oreon 10 ISO.
 3. Click Start. If Rufus asks how to write the image, choose DD Image mode.
 
-### dd (Linux)
+### Option C. dd (Linux)
 
 1. Find your USB stick with `lsblk`. Be very sure you have the right one, because dd overwrites it with no questions asked.
 2. Run the command below, replacing the file name and `/dev/sdX` with your own.
