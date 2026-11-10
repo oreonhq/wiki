@@ -9,40 +9,34 @@ Before you begin, please back up your files to an external drive or cloud servic
 ## What you need
 
 - A PC/laptop with a modern (Haswell+ for Intel, or Ryzen+ for AMD) processor.
-- A USB stick with at least 2.5 GB of space (4 GB recommended).
+- A USB stick with at least 2.5 GB of space (4 GB recommended) - ALL DATA ON THIS DRIVE WILL BE ERASED.
 - The Oreon 10 ISO file (Download [here](https://oreonhq.com/en_us/oreon/download))
 - A storage device (SSD or hard drive)
   - If installing Oreon alongside Windows: You will need at least 10 GiB of unallocated space, or an empty 9 GiB+ partition
   - If replacing Windows with Oreon: A drive with a total size of at least 10 GiB (recommended 30 GiB+ for installing apps and adding extra files)
 - An internet connection (Optional for basic installation, but required for extra software)
 
-1. A 64-bit PC with a fairly modern processor. Oreon 10 needs a processor that supports x86_64_v3. In plain words, that is most Intel processors from 2013 (Haswell) onward and AMD Ryzen (Zen) processors and newer. Some low-cost Intel chips from those years, such as certain Pentium and Celeron models, may not qualify.
-2. A USB stick big enough to hold the Oreon 10 ISO. Everything on the stick will be erased.
-3. The Oreon 10 ISO file.
-4. A disk to install to. If you want to keep Windows and add Oreon next to it, you need at least 10 GiB of unallocated space on that disk, or an empty partition of at least 9 GiB.
-5. An internet connection if you want extra software such as a web browser or Flatpak apps. Without one you can still install the base system.
-
 ## Make a bootable USB stick
 
-Pick one of these tools.
+You may choose one of the following 3 options depending on if you're using Windows, macOS, or Linux.
 
 ### Option A. Fedora Media Writer (Windows, macOS or Linux)
 
-1. Install and open Fedora Media Writer.
-2. Choose the option to select an ISO file you already downloaded, then pick the Oreon 10 ISO.
-3. Pick your USB stick and click Write.
+1. Install and open Fedora Media Writer (Download [here](https://fedoraproject.org/workstation/download/)).
+2. Choose the "Select .iso file" option, then navigate to and choose the Oreon 10 ISO file.
+3. Select your USB drive and press the "Write" button (WARNING: This will clear ALL data on the drive).
 
 ### Option B. Rufus (Windows)
 
-1. Open Rufus and pick your USB stick under Device.
-2. Click Select and choose the Oreon 10 ISO.
-3. Click Start. If Rufus asks how to write the image, choose DD Image mode.
+1. Install and open Rufus (Download [here](https://rufus.ie/en/)) and select your USB stick under Device.
+2. Press "SELECT" and choose the Oreon 10 ISO.
+3. Press "START", and if asked to choose between DD and ISO mode, choose DD mode.
 
 ### Option C. dd (Linux)
 
-1. Find your USB stick with `lsblk`. Be very sure you have the right one, because dd overwrites it with no questions asked.
-2. Run the command below, replacing the file name and `/dev/sdX` with your own.
-
+1. Find the name (1st column) of your USB drive with `lsblk` (match it to the drive mount point on the right)
+2. Double check that you have selected the right drive, and NOT your hard drive, as dd will erase all data on the selected drive.
+3. Open a terminal in the folder you have the ISO in, and then run the command below, replacing the ISO's name with the one you downloaded `/dev/sdX` with `/dev/<your device's name>`:
 ```
 sudo dd if=Oreon-10-BUILD-ARCH.iso of=/dev/sdX bs=4M status=progress oflag=sync
 ```
