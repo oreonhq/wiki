@@ -72,7 +72,7 @@ orbscli login -u <name> --url https://build.oreonhq.com --password-stdin
 orbscli login --url https://build.oreonhq.com --token-stdin
 ```
 
-The rest of this section is the stuff you end up needing once a spec is wrong. [Specs](packaging-specs.md) is how a spec is supposed to be written, [Commits](packaging-commits.md) is the one-package commit rule, [Groups](packaging-groups.md) is who owns which packages, and [Reading a failure](packaging-failures.md) is what to do with a failed chain, including an example with a complex package.
+The rest of this section is the stuff you end up needing once a spec is wrong. [Specs](packaging-specs.md) is how a spec is supposed to be written, [Commits](packaging-commits.md) is the one-package commit rule, [Groups](packaging-groups.md) is who owns which packages, [Reading a failure](packaging-failures.md) is what to do with a failed chain, and [Pull requests](packaging-pr.md) is ohqcibot on the GitHub PR (chainbuild, resume, merge).
 
 ## New package
 
@@ -140,7 +140,7 @@ Submit that string with `chain-build`. `--release` and `--side-tag` are both req
 orbscli chain-build 'pkg pkg : pkg' --release <release> --side-tag <tag>
 ```
 
-You can paste that same string into https://build.oreonhq.com if you prefer a web GUI.
+You can paste that same string into https://build.oreonhq.com if you prefer a web GUI. On a PR, paste it into a `/chainbuild` comment instead. See [Pull requests](packaging-pr.md). The bot needs the release name and the chain string, and it will not invent the order for you.
 
 For a single package, this is enough. `--release` is required. `--wait` and `--log` are how you sit on the job and keep the log.
 
@@ -232,4 +232,4 @@ orbscli commit-check
 orbscli commit-check --range origin/main..HEAD
 ```
 
-`lint` looks for the copyright header, a `Name` that matches the filename, and source URLs that still point at a lookaside cache. `groups check` complains if a spec is missing from `groups/` or shows up twice. `commit-check` complains if one commit touches two packages, or if the subject is missing the package name and what changed.
+lint looks for the copyright header, a Name that matches the filename, and source URLs that still point at a lookaside cache. groups check complains if a spec is missing from groups/ or shows up twice. commit-check complains if one commit touches two packages, or if the subject is missing the package name and what changed. After you open the PR, ohqcibot also checks that commits touching a .spec have a colon in the subject.

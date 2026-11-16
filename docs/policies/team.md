@@ -40,3 +40,5 @@ BoostyConnect Technologies is the legal holder of Oreon and provides infrastruct
 This may include helping secure infrastructure, services, and other operational resources used by the project.
 
 BoostyConnect does not generally direct the technical vision or day to day development of Oreon. The project's direction remains primarily guided by the actual team members.
+
+Relicensing an Oreon repository also needs approval from BoostyConnect Technologies, along with that repo's contributors and the Oreon project lead. See the [Contribution Policy](contributors.md).

@@ -36,7 +36,9 @@ With a dirty checkout, the first one looks at what you have not committed yet. W
 
 :::tip
 
-Groups can have a normal sentence as the subject, since none of those are a package. The moment the commit also contains a spec, or a patch next to a spec, the subject has to be the package name and what changed, and the other package directories have to be in other commits.
+On the PR, ohqcibot posts check `ohqcibot/commit-format` for commits that touch a `.spec`. Fail that and fix those subjects before you bother with `/chainbuild`. The rest of the PR bot is in [Pull requests](packaging-pr.md).
+
+groups/, orbscli, and the wiki can have a normal sentence as the subject, since none of those are a package. The moment the commit also contains a spec, or a patch next to a spec, the subject has to be the package name and what changed, and the other package directories have to be in other commits.
 
 :::
 
