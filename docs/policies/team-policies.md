@@ -5,7 +5,8 @@ We use both Matrix and Discord for team discussion. You may use DMs on either pl
 
 ## Acceptance of policies
 By joining the Oreon team, you agree to every other policy in this series, including but not limited to:
-- Contribution Policies
-- Community Guidelines
+- [Contribution Policy](contributors.md)
+- [Community Guidelines](community.md)
+- [AI Policy](ai.md)
 
 Failure to comply will result in a removal from the team.
