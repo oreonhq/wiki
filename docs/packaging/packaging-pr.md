@@ -8,7 +8,17 @@ ohqcibot watches PRs on [rpm-specfiles](https://github.com/oreonhq/rpm-specfiles
 
 ## Commit check
 
-On every open and sync, ohqcibot posts check `ohqcibot/commit-format`. Only commits that touch a `.spec` need a colon in the subject. Same rule as [Commits](packaging-commits.md). Docs-only or groups-only commits are left alone.
+On every open and sync, ohqcibot posts check `ohqcibot/commit-format`. Only commits that touch exactly one package `.spec` need a colon in the subject. Same rule as [Commits](packaging-commits.md). Docs-only, groups-only, and bulk multi-package commits are left alone.
+
+## Contributor policy
+
+Outside the Oreon GitHub org, ohqcibot also posts check `ohqcibot/contributor-policy`. Read [Contributors](/docs/policies/contributors), then comment exactly:
+
+```
+I agree with the policies
+```
+
+People already in the oreonhq org skip that check because they agreed to project policies when joining the team.
 
 ## Chain from a PR
 
@@ -26,7 +36,7 @@ The last line is the chain. Comment it with the release name first.
 
 Both pieces are required. Bare `/chainbuild` and a chain with no release are rejected. The release has to be an `oreon-*` folder this PR actually touches. If the PR changed both oreon-10 and oreon-11-rp1, pick one and run a second command for the other.
 
-The bot creates side tag `ohqcibot/pr-<n>` once per PR (or reuses it on later `/chainbuild`s), triggers the chain on that tag, and leaves a kickoff comment with the chain link. While the chain runs it edits one status comment instead of spamming new ones. When packages fail, dig in with [Reading a failure](packaging-failures.md) the same way you would for a local chain-build.
+The bot creates side tag `ohqcibot/pr-<n>` once per PR (or reuses it on later `/chainbuild`s), triggers the chain on that tag, and leaves a kickoff comment with the chain link. While the chain runs it edits one status comment instead of spamming new ones. When packages fail, dig in with [Troubleshooting](packaging-troubleshooting.md) the same way you would for a local chain-build.
 
 ## Resume
 
@@ -45,6 +55,14 @@ Someone opened the PR from their fork and you need a branch on the main repo so 
 ```
 
 That only works when the PR head is a fork. It creates (or updates) branch named after the PR number, opens a new PR from that branch onto main, and closes the fork PR.
+
+## Fix commit subjects
+
+If `ohqcibot/commit-format` fails because a `.spec` commit is missing the colon, rewrite them.
+
+```
+/fix
+```
 
 ## Merge
 

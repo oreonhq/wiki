@@ -3,6 +3,6 @@
   "position": 4,
   "link": {
     "type": "generated-index",
-    "description": "Specs, groups, commits, PR bot commands, and what to do with a failed chain."
+    "description": "Specs, groups, commits, PR bot commands, and troubleshooting failed builds."
   }
 }

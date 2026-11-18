@@ -72,7 +72,7 @@ orbscli login -u <name> --url https://build.oreonhq.com --password-stdin
 orbscli login --url https://build.oreonhq.com --token-stdin
 ```
 
-The rest of this section is the stuff you end up needing once a spec is wrong. [Specs](packaging-specs.md) is how a spec is supposed to be written, [Commits](packaging-commits.md) is the one-package commit rule, [Groups](packaging-groups.md) is who owns which packages, [Reading a failure](packaging-failures.md) is what to do with a failed chain, and [Pull requests](packaging-pr.md) is ohqcibot on the GitHub PR (chainbuild, resume, merge).
+The rest of this section is the stuff you end up needing once a spec is wrong. [Specs](packaging-specs.md) is how a spec is supposed to be written, [Commits](packaging-commits.md) is the one-package commit rule, [Groups](packaging-groups.md) is who owns which packages, [Troubleshooting](packaging-troubleshooting.md) is how to read a failed log and fix the spec, and [Pull requests](packaging-pr.md) is ohqcibot on the GitHub PR (chainbuild, resume, merge).
 
 ## New package
 
