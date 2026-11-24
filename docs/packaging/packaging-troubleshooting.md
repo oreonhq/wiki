@@ -24,13 +24,7 @@ In the tag, click **View** on a failed package.
 
 ![Side tag build list with View highlighted](/img/Screenshot_20261117_230040.png)
 
-On the build page, open the failed attempt and click **View log**.
-
-![Build attempt with View log highlighted](/img/Screenshot_20261117_230121.png)
-
-Scroll to the error. The useful bit is usually near `ERROR: Command failed` or `Bad exit status` for a section like `%check`.
-
-![Build log with the failed check highlighted](/img/Screenshot_20261117_230224.png)
+On the build page, open the failed attempt and click the log file you need.
 
 ## What to look for
 
